@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+
+  <body>
+    <h1>
+      <%= "Rock Paper Scissors" %>
+    </h1>
+
+    <h3><%= session[:winner_statement] %></h3>
+
+    <h4>Human Score: <%= session[:player_score] %></h4>
+    <h4>Computer Score: <%= session[:computer_score] %></h4>
+
+   <form action ="/reset" method="post">
+     <button type="submit" name="reset">Play Again</button>
+   </form>
+
+
+
+</body>
+</html>

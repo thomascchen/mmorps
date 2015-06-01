@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+
+  <body>
+    <h1>
+      <%= "Rock Paper Scissors" %>
+    </h1>
+
+    <h3><%= session[:outcome_statement] %></h3>
+
+    <h4>Human Score:   <%= session[:player_score] %></h4>
+    <h4>Computer Score:  <%= session[:computer_score] %></h4>
+
+   <form action ="/choose" method="post">
+     <h2>Choose!</h2>
+     <button type="submit" name="choice" value="r">Rock</button>
+     <button type="submit" name="choice" value="p">Paper</button>
+     <button type="submit" name="choice" value="s">Scissors</button>
+   </form>
+
+
+
+</body>
+</html>
